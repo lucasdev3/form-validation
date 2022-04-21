@@ -44,20 +44,95 @@ table {
 
 /* Formulario Inicio */
 
-.container-content  {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+body {
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
 }
 
 
-fieldset {
-    background-color: rgb(232, 232, 233);
+
+.container-content {
+    width: 100%;
+}
+
+#title {
+    color: white;
+    font-weight: 800;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.container-formulario {
+    width: 800px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: auto;
-    margin-top: auto;
+    border: 2px solid white;
+    width: 80%;
+    height: 100%;
+}
+
+fieldset {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-content input {
+    width: 90%;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-size: 15px;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(8, 58, 165);
+}
+
+span {
+    color: white;
+}
+
+@media screen and (max-width: 800px){
+    body {
+        height: 80%;
+        width: 80%;
+    }
+
+    form {
+        height: 100%;
+    }
 }
 
 /* Formulario Fim */
+
