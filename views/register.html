@@ -4,52 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="shortcut icon" href="../assets/imgs/icons8-formato-32.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
     <title>Register</title>
 </head>
 <body>
     <div class="container">
-        <main class="container-content">
-            <div class="container-formulario">
-                <h1 id="title">Formulário de registro</h1>
-                <form action="" method="" id="formulario" autocomplete="off" >
-                    <fieldset>
-                        <div class="form-content">
-                            <label for="">Usuario</label>
-                            <input type="text" id="user">
-                            <label for="">Senha</label>
-                            <input type="password" id="password">
-                            <label for="">Confirmação de Senha</label>
-                            <input type="password" id="confirm-password">
-                            <label for="">Nome</label>
-                            <input type="text" id="name">
-                            <label for="">E-mail</label>
-                            <input type="email" id="email">
-                            <label for="">CEP</label>
-                            <input type="number" id="cep">
-                            <label for="">Logradouro</label>
-                            <input type="text" id="logradouro">
-                            <label for="">Cidade</label>
-                            <input type="text" id="localidade">
-                            <label for="">Sexo</label>
-                            <div class="radio">
-                                <div class="masculino">
-                                    <span>Masculino</span>
-                                    <input type="radio" id="radio-masculino" name="radio">
+        <header>
+            <nav>
+                <li class="menu"><a href=""> Home </a></li>
+                <li class="menu"><a href=""> Formulário </a></li>
+                <li class="menu"><a href=""> Colaboradores </a></li>
+            </nav>
+        </header>
+            <main class="container-content"> <!-- Formulário -->
+                <div class="container-formulario">
+                    <h1 id="title">Formulário de registro</h1>
+                    <form action="" method="" id="formulario" autocomplete="off" >
+                        <fieldset>
+                            <div class="form-content">
+                                <label for="">Usuario</label>
+                                <input placeholder="Não utilize caractéres especiais !@#$%¨&*()-+;/?"  type="text" id="user" required>
+                                <label for="" >Senha</label>
+                                <input placeholder="Mínimo 6 e máximo 15 caractéres." type="password" id="password" required>
+                                <label for="">Confirmação de Senha</label>
+                                <input placeholder="Mínimo 6 e máximo 15 caractéres." type="password" id="confirm-password" required>
+                                <label for="">Nome</label>
+                                <input placeholder="Nome Completo" type="text" id="name" required>
+                                <label for="">E-mail</label>
+                                <input placeholder="seu-email@dominio.com" type="email" id="email" required>
+                                <label for="">CEP</label>
+                                <input placeholder="12345678" type="number" id="cep" required>
+                                <label for="">Logradouro</label>
+                                <input type="text" id="logradouro" required>
+                                <label for="">Cidade</label>
+                                <input type="text" id="localidade" required>
+                                <label class="sex" for="">Sexo</label>
+                                <div class="radio">
+                                    <div class="masculino" >
+                                        <span>Masculino</span>
+                                        <input type="radio" id="radio-masculino" name="radio">
+                                    </div>
+                                    <div class="feminino">
+                                        <span>Feminino</span>
+                                        <input type="radio" id="raio-feminino" name="radio" checked>
+                                    </div>
                                 </div>
-                                <div class="feminino">
-                                    <span>Feminino</span>
-                                    <input type="radio" id="raio-feminino" name="radio">
-                                </div>
+                                <button type="submit" id="button">Cadastrar</button>
                             </div>
-                            <button type="submit" id="button">Cadastrar</button>
-                        </div>
-                    </fieldset>
-                </form>              
-            </div>
-        </main>
+                        </fieldset>
+                    </form>              
+                </div>
+                <footer>
+                    <p>Copyright © 2020 - Todos os direitos reservados</p>
+                </footer>
+            </main> <!-- Fim do formulário -->
     </div>
+
+            
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../assets/js/register.js"></script>
