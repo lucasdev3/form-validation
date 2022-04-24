@@ -89,6 +89,7 @@ fieldset {
 }
 
 .form-content input {
+    padding-left: 20px;
     height: 30px;
     width: 100%;
     border-radius: 10px;
