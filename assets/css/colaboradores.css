@@ -33,16 +33,14 @@ header li a:hover{
     margin: 0 10px;
     color: white;
 }
-nav li:nth-child(1) {
+nav li:nth-child(3) {
     border-bottom: #e44c65 solid 2px;
     border-radius: 25px;
     box-shadow: #e44c65 1px 0px 2px;
     padding: 5px;
 }
+
 /* HEADER */
-
-
-
 
 
 
