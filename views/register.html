@@ -17,9 +17,9 @@
     <div class="container">
         <header>
             <nav>
-                <li class="menu"><a href=""> Home </a></li>
-                <li class="menu"><a href=""> Formulário </a></li>
-                <li class="menu"><a href=""> Colaboradores </a></li>
+                <li class="menu"><a href="../index.html"> Home </a></li>
+                <li class="menu"><a href="../views/register.html"> Formulário </a></li>
+                <li class="menu"><a href="../views/colaboradores.html"> Colaboradores </a></li>
             </nav>
         </header>
             <main class="container-content"> <!-- Formulário -->
@@ -28,40 +28,52 @@
                     <form action="" method="" id="formulario" autocomplete="off" >
                         <fieldset>
                             <div class="form-content">
-                                <label for="">Usuario</label>
-                                <input placeholder="Não utilize caractéres especiais !@#$%¨&*()-+;/?"  type="text" id="user" required>
+                                <label for="">Usuário</label>
+                                <input placeholder="Usuario"  type="text" id="user" required>
+                                <p>*Não utilize caractéres especiais !@#$%¨&*()-+;/?.</p>
+                                <p>*O nome de usuário não deve conter espaço.</p>
+                                <p>*5 a 12 caractéres.</p>
                                 <label for="" >Senha</label>
-                                <input placeholder="Mínimo 6 e máximo 15 caractéres." type="password" id="password" required>
+                                <input placeholder="Digite sua senha" type="password" id="password" required>
+                                <p>*Mínimo 6 e máximo 15 caractéres.</p>
+                                <P>*Para uma senha forte evite utilizar o nome de usuário como senha.</P>
                                 <label for="">Confirmação de Senha</label>
-                                <input placeholder="Mínimo 6 e máximo 15 caractéres." type="password" id="confirm-password" required>
+                                <input placeholder="Digite novamente a senha escolhida" type="password" id="confirm-password" required>
                                 <label for="">Nome</label>
-                                <input placeholder="Nome Completo" type="text" id="name" required>
+                                <input placeholder="Nome completo" type="text" id="name" required>
+                                <label for="">Nome social (opcional)</label>
+                                <input placeholder="Como devemos chama-lo?" type="text" id="name-social">
                                 <label for="">E-mail</label>
                                 <input placeholder="seu-email@dominio.com" type="email" id="email" required>
                                 <label for="">CEP</label>
                                 <input placeholder="12345678" type="number" id="cep" required>
+                                <p>*Utilize apenas números.</p>
                                 <label for="">Logradouro</label>
                                 <input type="text" id="logradouro" required>
                                 <label for="">Cidade</label>
                                 <input type="text" id="localidade" required>
                                 <label class="sex" for="">Sexo</label>
-                                <div class="radio">
-                                    <div class="masculino" >
-                                        <span>Masculino</span>
-                                        <input type="radio" id="radio-masculino" name="radio">
-                                    </div>
-                                    <div class="feminino">
-                                        <span>Feminino</span>
-                                        <input type="radio" id="raio-feminino" name="radio" checked>
-                                    </div>
-                                </div>
-                                <button type="submit" id="button">Cadastrar</button>
                             </div>
+                            <div class="radio">
+                                <div class="masculino" >
+                                    <span>Masculino</span>
+                                    <input type="radio" id="radio-masculino" name="radio" checked>
+                                </div>
+                                <div class="feminino">
+                                    <span>Feminino</span>
+                                    <input type="radio" id="raio-feminino" name="radio">
+                                </div>
+                                <div class="outro">
+                                    <span>Outros</span>
+                                    <input type="radio" id="raio-outros" name="radio">
+                                </div>
+                            </div>
+                            <button type="submit" id="button">Cadastrar</button>
                         </fieldset>
                     </form>              
                 </div>
                 <footer>
-                    <p>Copyright © 2020 - Todos os direitos reservados</p>
+                    <p>Copyright © 2022 - Todos os direitos reservados</p>
                 </footer>
             </main> <!-- Fim do formulário -->
     </div>
