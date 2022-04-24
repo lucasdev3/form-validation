@@ -94,9 +94,6 @@ fieldset {
     display: flex;
     flex-direction: row;
 }
-input::selection {
-    background: red;
-}
 label {
     color: #ffffff;
     margin-top: 1rem;
